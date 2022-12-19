@@ -3,5 +3,4 @@
 
 Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
 
-Projeto Cordel, de Milton Duarte
-<a href="https://robertorangelsa.github.io/projeto-cordel/">Acessar página</a>
+Acessar o <a href="https://robertorangelsa.github.io/projeto-cordel/">Projeto Cordel</a>, de Milton Duarte
