@@ -4,90 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabelas</title>
+    <title>Exercícios de Tabela</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
-        table{
+        table {
+            width: 500px;
             border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 8px;
         }
         th, td {
             border: 1px solid black;
             padding: 8px;
         }
-        .centro {
-            text-align: center;
-        }
-        .esquerda {
-            text-align: left;
-        }
-        .inverso {
+        .gray {
             background-color: gray;
-            color: white;
         }
-        .realce {
-            font-weight: bolder;
+        .cadetblue {
+            background-color: cadetblue;
         }
     </style>
 </head>
 <body>
+    <h1>Exercícios de Tabela</h1>
     <table>
-        <tr class="inverso">
-            <th rowspan="2" scope="col">Área</th>
-            <th rowspan="2" scope="col">Disciplinas</th>
-            <th colspan="2" scope="colgroup">Notas</th>
-            <th rowspan="2" scope="col">Média</th>
-        </tr>
-        <tr class="inverso">
-            <th>Nota 1</th>
-            <th>Nota 2</th>
+        <colgroup>
+            <col class="gray">
+            <col class="cadetblue">
+            <col class="gray">
+            <col class="cadetblue">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
         </tr>
         <tr>
-            <th rowspan="4" scope="rowgroup">Exatas</th>
-            <td>Matemática</td>
-            <td class="centro">0.0</td>
-            <td class="centro">0.0</td>
-            <td class="centro">0.0</td>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
         </tr>
         <tr>
-            <td>Física</td>
-            <td class="centro">0.0</td>
-            <td class="centro">0.0</td>
-            <td class="centro">0.0</td>
+            <td>Cláudio</td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
         </tr>
         <tr>
-            <td>Química</td>
-            <td class="centro">0.0</td>
-            <td class="centro">0.0</td>
-            <td class="centro">0.0</td>
+            <td>Gustavo</td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
         </tr>
         <tr>
-            <td>Biologia</td>
-            <td class="centro">0.0</td>
-            <td class="centro">0.0</td>
-            <td class="centro">0.0</td>
-        </tr>
-        <tr class="inverso">
-            <th colspan="4" scope="row" class="esquerda">Média de Exatas</th>
-            <td class="centro realce">0.0</td>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
         </tr>
         <tr>
-            <th rowspan="2" scope="rowgroup">Humanas</th>
-            <td>História</td>
-            <td class="centro">0.0</td>
-            <td class="centro">0.0</td>
-            <td class="centro">0.0</td>
+            <td>Maria</td>
+            <td>F</td>
+            <td>39</td>
+            <td>Médica</td>
         </tr>
         <tr>
-            <td>Geografia</td>
-            <td class="centro">0.0</td>
-            <td class="centro">0.0</td>
-            <td class="centro">0.0</td>
-        </tr>
-        <tr class="inverso">
-            <th colspan="4" scope="row" class="esquerda">Média de Humanas</th>
-            <td class="centro realce">0.0</td>
+            <td>Otávio</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
         </tr>
     </table>
 </body>
