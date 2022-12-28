@@ -12,14 +12,21 @@ Dispositivos extra grandes: acima de 1200px
 */
 
 @media print {
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
     body {
         background-image: url(../imagens/back-print.jpg); /*DESNECESÁRIO*/
     }
     main {
+        width: 90%;
         border: 2px solid black;
     }
+    main::after {
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+        text-decoration: overline;
+    }
     main h1 {
-        font-family: 'Courier New', Courier, monospace;
         text-shadow: none;
         color: black;
     }
